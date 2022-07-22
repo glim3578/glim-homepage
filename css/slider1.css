@@ -1,6 +1,6 @@
 .slider{
     width: 49.75vw;
-    height: 26vw;
+    height: 27vw;
     position: relative;
     float:left;
 }
@@ -30,8 +30,8 @@ ul.imgs li{
     display: inline-block;
     border-radius: 50%;
     background-color: rgba(0,0,0,0.55);
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     cursor: pointer;
 }
 .slider input[type=radio]:nth-child(1):checked~.bullets>label:nth-child(1){

@@ -22,37 +22,38 @@ ul.imgs li{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 10px;
+    bottom: 2px;
     z-index: 2;
 }
 .bullets label{
     display: inline-block;
     border-radius: 50%;
     background-color: rgba(0,0,0,0.55);
-    width: 15px;
-    height: 15px;
+    width: 1.8vw;
+    height: 1.8vw;
+    margin: 0.3vw;
     cursor: pointer;
 }
 .slider input[type=radio]:nth-child(1):checked~.bullets>label:nth-child(1){
-    background-color: #fff;
+    background-color: rgba(229,229,229,0.55);
 }
 .slider input[type=radio]:nth-child(2):checked~.bullets>label:nth-child(2){
-    background-color: #fff;
+    background-color: rgba(229,229,229,0.55);
 }
 .slider input[type=radio]:nth-child(3):checked~.bullets>label:nth-child(3){
-    background-color: #fff;
+    background-color: rgba(229,229,229,0.55);
 }
-.slider input[type=radio]:nth-child(4):checked2~.bullets>label:nth-child(4){
-    background-color: #fff;
+.slider input[type=radio]:nth-child(4):checked~.bullets>label:nth-child(4){
+    background-color: rgba(229,229,229,0.55);
 }
 .slider input[type=radio]:nth-child(5):checked~.bullets>label:nth-child(5){
-    background-color: #fff;
+    background-color: rgba(229,229,229,0.55);
 }
 .slider input[type=radio]:nth-child(6):checked~.bullets>label:nth-child(6){
-    background-color: #fff;
+    background-color: rgba(229,229,229,0.55);
 }
 .slider input[type=radio]:nth-child(7):checked~.bullets>label:nth-child(7){
-    background-color: #fff;
+    background-color: rgba(229,229,229,0.55);
 }
 
 .slider input[type=radio]:nth-child(1):checked~ul.imgs>li:nth-child(1){
@@ -75,27 +76,27 @@ ul.imgs li{
     transition: 1s;
     z-index: 1;
 }
-.slider input[type=radio]:nth-child(4):checked~ul.imgs>li:nth-child(5){
+.slider input[type=radio]:nth-child(5):checked~ul.imgs>li:nth-child(5){
     opacity: 1;
     transition: 1s;
     z-index: 1;
 }
-.slider input[type=radio]:nth-child(4):checked~ul.imgs>li:nth-child(6){
+.slider input[type=radio]:nth-child(6):checked~ul.imgs>li:nth-child(6){
     opacity: 1;
     transition: 1s;
     z-index: 1;
 }
-.slider input[type=radio]:nth-child(4):checked~ul.imgs>li:nth-child(7){
+.slider input[type=radio]:nth-child(7):checked~ul.imgs>li:nth-child(7){
     opacity: 1;
     transition: 1s;
     z-index: 1;
 }
-.slider input[type=radio]:nth-child(4):checked~ul.imgs>li:nth-child(8){
+.slider input[type=radio]:nth-child(8):checked~ul.imgs>li:nth-child(8){
     opacity: 1;
     transition: 1s;
     z-index: 1;
 }
-.slider input[type=radio]:nth-child(4):checked~ul.imgs>li:nth-child(9){
+.slider input[type=radio]:nth-child(9):checked~ul.imgs>li:nth-child(9){
     opacity: 1;
     transition: 1s;
     z-index: 1;

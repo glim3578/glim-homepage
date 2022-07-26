@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <script src="js/swiper.js"></script>
-    <script src="js/swiper0.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.modal.min.js"></script>
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css" rel="stylesheet">
@@ -21,16 +21,17 @@
       body {margin: 0 auto; width:99.5vw;-ms-overflow-style: none;}
       html {scroll-behavior: smooth}
       ::-webkit-scrollbar { display: none;}
+      @media screen and (orientation: portrait){#header {display:none;}}
     </style> 
   </head>
     <body style="font-size: 1vw;font-family: NanumSquare;">
       <div id="home" style="margin-top: -5vw;padding-top: 7vw;"> </div>
       <header>
         <ul style="font-size: 2.2vw;">
-          <li style="list-style:none;"><a href="#section4" style="float: right; margin-top: -2.3vw; margin-left: 84vw;color: black;position:fixed;z-index:3; font-family:NanumSquarebold; text-decoration-line: none;">Contect Us</a></li>
-          <li style="list-style:none;"><a href="#section3" style="float: right; margin-top: -2.3vw; margin-left: 74vw;color: black;position:fixed;z-index:3; font-family:NanumSquarebold; text-decoration-line: none;">기업문화</a></li>
-          <li style="list-style:none;"><a href="#section2" style="float: right; margin-top: -2.3vw; margin-left: 64vw;color: black;position:fixed;z-index:3; font-family:NanumSquarebold; text-decoration-line: none;">제품소개</a></li>
-          <li style="list-style:none;"><a href="#section1" style="float: right; margin-top: -2.3vw; margin-left: 54vw;color: black;position:fixed;z-index:3; font-family:NanumSquarebold; text-decoration-line: none;">그림소개</a></li>
+          <li style="list-style:none;"><a href="#section4" style="float: right; margin-top: -2.3vw; margin-left: 80vw;color: black;position:fixed;z-index:3; font-family:NanumSquarebold; text-decoration-line: none;">Contect Us</a></li>
+          <li style="list-style:none;"><a href="#section3" style="float: right; margin-top: -2.3vw; margin-left: 70vw;color: black;position:fixed;z-index:3; font-family:NanumSquarebold; text-decoration-line: none;">기업문화</a></li>
+          <li style="list-style:none;"><a href="#section2" style="float: right; margin-top: -2.3vw; margin-left: 60vw;color: black;position:fixed;z-index:3; font-family:NanumSquarebold; text-decoration-line: none;">제품소개</a></li>
+          <li style="list-style:none;"><a href="#section1" style="float: right; margin-top: -2.3vw; margin-left: 50vw;color: black;position:fixed;z-index:3; font-family:NanumSquarebold; text-decoration-line: none;">그림소개</a></li>
         </ul>
         <a href="#home"><img src="images/logo.png" style="margin-left: 1vw; margin-top: -2.4vw; position:fixed; width:7vw; z-index:3;"></a>
       </header>
@@ -49,7 +50,7 @@
           <p style="font-size:1.39vw; position: absolute; left: 2vw; top:13vw; color:">(주)그림은 머신 비전 업체로서 <br> 많은 Solution과 다양한 현장 경험을 통하여
           <br>보다 나은 제품으로 고객의 경쟁력을 높일 수 있는 Partner가 되겠습니다.
           </p>
-          <p style="font-size:1.6vw; position: absolute; left:2vw; top:21vw;font-family: NanumSquarebold;color:">머신 비전이란 무엇입니까?</p>
+          <p style="font-size:1.6vw; position: absolute; left:2vw; top:21vw;font-family: NanumSquarebold;color:">​머신 비전이란 무엇입니까?</p>
           <p style="font-size:1.39vw; position: absolute; left:2vw; top:24vw;">제조공정에서 제품을 검수하는 장비입니다.</p>
         </article>
         <img style="width:49.75vw;float:right;" src="images/main_img.png">
@@ -81,7 +82,7 @@
       <section id="section2" style="height: 40vw; margin-top: -2.3vw;padding-top: 2.3vw;">
         <p style="font-size:3vw; text-align:center; font-family:NanumSquarebold;">제품소개</p>
         <div class="swiper-container">
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper" style="width:60vw">
             <div class="swiper-slide"><a href="#ex1" rel="modal:open"><img src="images/Belt Width Inspect.jpg"></a></div>
             <div class="swiper-slide"><a href="#ex2" rel="modal:open"><img src="images/Coating Rod Inspect.jpg"></a></div>
             <div class="swiper-slide"><a href="#ex3" rel="modal:open"><img src="images/Lens Aligner.jpg"></a></div>

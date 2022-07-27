@@ -4,7 +4,7 @@ var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android',
                      'Opera Mobi', 'Opera Mini', 'IEmobile');
             for (var word in mobileKeyWords){
                 if (navigator.userAgent.match(mobileKeyWords[word]) != null){
-                          window.location.href = "./m/l";
+                          window.location.href = "./m/";
                     break;
                       }
             }

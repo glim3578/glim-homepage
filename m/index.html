@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <script src="../js/swiper.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.modal.min.js"></script>
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css" rel="stylesheet">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/swiper_m.css">
+    <link rel="stylesheet" href="../css/slider_m.css">
+    <link rel="stylesheet" href="../css/jquery.modal.min_m.css">
+    <title>GLIM</title>
+    <style>
+      * {  font-family: 'NanumGothic';}
+      * {  font-family: 'NanumSquare';}
+      * {  line-height: 130%;}
+      * {word-break: keep-all;}
+      header {background-color:#FFFFFF; opacity:0.8; width:99.5vw; height:5vw; position:fixed; justify-content: space-between;z-index:2;margin-top: -2vw}
+      body {margin: 0 auto; width:99.5vw;-ms-overflow-style: none;}
+      html {scroll-behavior: smooth}
+      ::-webkit-scrollbar { display: none;}
+      @media screen and (orientation: portrait) and (max-width:854px) {#main720p {display:none;}}
+      @media screen and (orientation: portrait) and (max-width:854px) {#main1080p {display:none;}}
+      @media screen and (orientation: portrait) and (min-width:854px){#main480p {display:none;}}
+      @media screen and (orientation: portrait) and (min-width:854px){#main1080p {display:none;}}
+      @media screen and (orientation: landscape) {#main480p {display:none;}}
+      @media screen and (orientation: landscape) {#main720p {display:none;}}
+    </style> 
+  </head>
+    <body style="font-size: 1vw;font-family: NanumSquare;">
+      <div id="home" style="margin-top: -5vw;padding-top: 7vw;"> </div>
+      <header>
+        <ul style="font-size: 3vw;">
+          <li style="list-style:none;"><a href="#section4" style="float: right; margin-top: -2.3vw; margin-left: 70vw;color: black;position:fixed;z-index:3; font-family:NanumSquarebold; text-decoration-line: none;">Contect Us</a></li>
+          <li style="list-style:none;"><a href="#section3" style="float: right; margin-top: -2.3vw; margin-left: 57vw;color: black;position:fixed;z-index:3; font-family:NanumSquarebold; text-decoration-line: none;">기업문화</a></li>
+          <li style="list-style:none;"><a href="#section2" style="float: right; margin-top: -2.3vw; margin-left: 44vw;color: black;position:fixed;z-index:3; font-family:NanumSquarebold; text-decoration-line: none;">제품소개</a></li>
+          <li style="list-style:none;"><a href="#section1" style="float: right; margin-top: -2.3vw; margin-left: 31vw;color: black;position:fixed;z-index:3; font-family:NanumSquarebold; text-decoration-line: none;">그림소개</a></li>
+        </ul>
+        <a href="#home"><img src="../images/logo.png" style="margin-left: 1vw; margin-top: -2.4vw; position:fixed; width:7vw; z-index:3;"></a>
+      </header>
+
+      <section style="margin-top:3vw;">
+        <video id="main1080p" poster="../images/loading.gif" autoplay="true" loop="loop" muted="muted" volume="0" style="width: 100%;"><source src="../videos/main1080p.mp4" type="video/mp4">
+        </video>  
+       <video id="main720p" poster="../images/loading.gif" autoplay="true" loop="loop" muted="muted" volume="0" style="width: 100%;"><source src="../videos/main720p.mp4" type="video/mp4">
+        </video> 
+        <video id="main480p" poster="../images/loading.gif" autoplay="true" loop="loop" muted="muted" volume="0" style="width: 100%;"><source src="../videos/main480p.mp4" type="video/mp4">
+        </video>   
+      </section>
+      <section id="section1" style="background-color:#F2F2F2;margin-top: -5.5vw; padding-top: 5.5vw;">
+        <img style="width:99.5vw;margin-top: -0.5vw;" src="../images/main_img.png">
+        <article style="width: 99.5vw; height: 50vw;">
+          <p style="font-size:3vw; margin-left:2vw; ;font-family: NanumSquarebold;color:">​'그림'은 사람의 형상을 평면 위에 나타낸다는 의미이며, 
+          <br>'GLIM'은 눈(eye)이라는 뜻으로도 해석됩니다.
+          </p>
+          <p style="font-size:2.5vw; margin-left: 2vw; color:">고객의 눈이 되어 고객과 같이 새로운 것을 그려 나가는데 <br> 목표를 지향하고 있습니다.
+          </p>
+          <p style="font-size:2.5vw; margin-left: 2vw; color:">(주)그림은 머신 비전 업체로서 <br> 많은 Solution과 다양한 현장 경험을 통하여
+          <br>보다 나은 제품으로 고객의 경쟁력을 높일 수 있는 Partner가 되겠습니다.
+          </p>
+          <p style="font-size:3vw; margin-left:2vw;font-family: NanumSquarebold;color:">​머신 비전이란 무엇입니까?</p>
+          <p style="font-size:2.5vw; margin-left:2vw;">제조공정에서 제품을 검수하는 장비입니다.</p>
+          <div style="height:2vw"></div>
+        </article>
+      </section>
+
+      <section style="background-color:#F2F2F2">
+        <div class="slider">
+          <input type="radio" name="slide1" id="slide1" checked>
+          <input type="radio" name="slide1" id="slide2">
+          <input type="radio" name="slide1" id="slide3">
+          <ul id="imgholder" class="imgs">
+            <li><img src="../images/전극 슬라이딩 검사.jpg" style="width:99.5vw"></li>
+            <li><img src="../images/절연 Align Vision, Bar Type Vision.jpg" style="width:99.5vw"></li>
+            <li><img src="../images/절연overlay vision.jpg" style="width:99.5vw"></li>
+          </ul>
+          <div class="bullets">
+            <label for="slide1">&nbsp;</label>
+            <label for="slide2">&nbsp;</label>
+            <label for="slide3">&nbsp;</label>
+          </div>
+        </div>
+        <article style="width: 99.5vw; height: 50vw;">
+          <div style="height:2vw"></div>
+          <p style="font-size:3vw; margin-left:2vw; top:2vw;font-family: NanumSquarebold; color:">머신 비전과 2차전지</p>
+          <p style="font-size:2.5vw; margin-left:2vw; top:5vw;; color:">2차전지의 생산 과정 중 무수히 많은 머신 비전 시스템이 필요합니다. </p> 
+          <p style="font-size:2.5vw; margin-left:2vw; top:8vw;; color:">(주)GLIM은 LG에너지솔루션과 2차전지 생산에 협력하고 있습니다.</p>
+          <p style="font-size:3vw; margin-left:2vw; top:13vw;font-family: NanumSquarebold; color:">GLIM의 경쟁력</p>
+          <p style="font-size:2.5vw; margin-left:2vw; top:16vw; color:">GLIM은...</p>
+        </article>
+      </section>
+      <section id="section2" style="height: 80vw; margin-top: -5.5vw;padding-top: 5.5vw;">
+        <p style="font-size:5vw; text-align:center; font-family:NanumSquarebold;">제품소개</p>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#ex1" rel="modal:open"><img src="../images/Belt Width Inspect.jpg"></a></div>
+            <div class="swiper-slide"><a href="#ex2" rel="modal:open"><img src="../images/Coating Rod Inspect.jpg"></a></div>
+            <div class="swiper-slide"><a href="#ex3" rel="modal:open"><img src="../images/Lens Aligner.jpg"></a></div>
+            <div class="swiper-slide"><a href="#ex4" rel="modal:open"><img src="../images/Micro Pin Counter.jpg"></a></div>
+            <div class="swiper-slide"><a href="#ex5" rel="modal:open"><img src="../images/Mobile LCD Discriminant Inspect.jpg"></a></div>
+            <div class="swiper-slide"><a href="#ex6" rel="modal:open"><img src="../images/Portable Film Width Sensing Machine.jpg"></a></div>
+            <div class="swiper-slide"><a href="#ex7" rel="modal:open"><img src="../images/Sanitary Napkin Inspect.jpg"></a></div>
+            <div class="swiper-slide"><a href="#ex8" rel="modal:open"><img src="../images/Web Inspection System.jpg"></a></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <script src="../js/swiper01_m.js"></script>
+    
+      <div id="ex1" class="modal">
+        <video preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" controlslist="modownload" controls style="width: 100%;"> <source src="../videos/Belt Width Inspect.mp4" type="video/mp4">
+        </video> 
+      </div>
+
+      <div id="ex2" class="modal">
+        <video preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" controlslist="modownload" controls style="width: 100%;"> <source src="../videos/Coating Rod Inspect.mp4" type="video/mp4">
+        </video> 
+      </div>
+
+      <div id="ex3" class="modal">
+        <video preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" controlslist="modownload" controls style="width: 100%;"> <source src="../videos/Lens Aligner.mp4" type="video/mp4">
+        </video> 
+      </div>
+
+      <div id="ex4" class="modal">
+        <video preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" controlslist="modownload" controls style="width: 100%;"> <source src="../videos/Micro Pin Counter.mp4" type="video/mp4">
+        </video> 
+      </div>
+
+      <div id="ex5" class="modal">
+        <video preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" controlslist="modownload" controls style="width: 100%;"> <source src="../videos/Mobile LCD Discriminant Inspect.mp4" type="video/mp4">
+        </video> 
+      </div>
+
+      <div id="ex6" class="modal">
+        <video preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" controlslist="modownload" controls style="width: 100%;"> <source src="../videos/Portable Film Width Sensing Machine.mp4" type="video/mp4">
+        </video> 
+      </div>
+
+      <div id="ex7" class="modal">
+        <video preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" controlslist="modownload" controls style="width: 100%;"> <source src="../videos/Sanitary Napkin Inspect.mp4" type="video/mp4">
+        </video> 
+      </div>
+
+      <div id="ex8" class="modal">
+        <video preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" controlslist="modownload" controls style="width: 100%;"> <source src="../videos/Web Inspection System.mp4" type="video/mp4">
+        </video> 
+      </div>
+    </section>
+      <div id="section3" style="margin-top: -7vw; padding-top: 7vw; height:0vw"></div>
+    <section style="background-color:#FFFEE4; width: 99.5vw;">
+      <div class="slider" style="margin-top: -2.3vw;">
+        <input type="radio" name="slide2" id="slide4" checked>
+        <input type="radio" name="slide2" id="slide5">
+        <input type="radio" name="slide2" id="slide6">
+        <ul id="imgholder" class="imgs">
+          <li><img src="../images/image01.jpg" style="width:99.5vw"></li>
+          <li><img src="../images/image02.jpg" style="width:99.5vw"></li>
+          <li><img src="../images/image03.jpg" style="width:99.5vw"></li>
+        </ul>
+        <div class="bullets">
+          <label for="slide4">&nbsp;</label>
+          <label for="slide5">&nbsp;</label>
+          <label for="slide6">&nbsp;</label>
+        </div>
+      </div>      
+      <article style="position:relative; width: 99.5vw;height: 45vw;">
+        <p style="font-size:2.5vw;position: absolute; left: 20vw; top: 2vw; font-family: NanumSquarebold; color:">안정된 생활을 <br> 지원합니다. </p>
+        <p style="font-size:2vw;position: absolute; left: 20vw; top: 10vw; color:">건강검진, 통신비 지원 <br> 각종 경조사 지원<br> 결혼준비 지원, 선택적복리후생</p>
+        <p style="font-size:2.5vw;position: absolute; left: 70vw; top: 2vw; font-family: NanumSquarebold;color:">직원들의 열정에 <br> 보답하고 싶습니다. </p>
+        <p style="font-size:2vw;position: absolute; left: 70vw; top: 10vw; color:">퇴직연금 인센티브제 <br> 퇴직금 <br> 4대 보험</p><br><br>
+        <img style="width: 10vw;position: absolute; left: 5vw; top: 3.5vw;" src="../images/bankbook.png">
+        <img style="width: 10vw;position: absolute; left: 55vw; top: 3.5vw" src="../images/money.png">
+        <p style="font-size:2.5vw;position: absolute; left: 20vw; top: 22vw; font-family: NanumSquarebold; color:">우리회사만의 <br> 특별한 복지</p>
+        <p style="font-size:2vw;position: absolute; left: 20vw; top: 29.5vw; color:">명절 선물<br> 귀향비</p><br><br>
+        <p style="font-size:2.5vw;position: absolute; left: 70vw; top: 22vw; font-family: NanumSquarebold;color:">직원들의 자기계발을 존중합니다. </p>
+        <p style="font-size:2vw;position: absolute; left: 70vw; top: 29.5vw; color:">워크샵, 플레이샵<br> 자격증취득지원<br> 교육비 지원<br> 점심식사 및 저녁식사 제공</p>
+        <img style="width: 10vw;position: absolute; left: 5vw; top: 22vw;" src="../images/giftbox.png">
+        <img style="width: 10vw;position: absolute; left: 55vw; top: 22vw" src="../images/notebook.png">
+      </article>
+    </section>
+
+    <section style="background-color:#FFFEE4;">
+      <img style="width:99.5vw;" src="../images/image04.jpg">
+      <article style="position:relative; width: 99.5vw;height: 45vw;">
+        <p style="font-size:2.5vw; position: absolute; left: 20vw; top: 2vw; font-family: NanumSquarebold; color:">편안하게 일할 수 있는 <br> 최선의 환경을 제공합니다.</p>
+        <p style="font-size:2vw;position: absolute; left: 20vw; top: 10vw; color:">공기청정기<br> 카페테리아 <br> 사무용품 지급</p><br><br>
+        <p style="font-size:2.5vw;position: absolute; left: 70vw; top: 2vw; font-family: NanumSquarebold;color:">직원 중심의 조직문화를 <br> 만들어갑니다.</p>
+        <p style="font-size:2vw;position: absolute; left: 70vw; top: 10vw; color:">회식강요 안함<br> 야근강요 안함 <br> 자유복장</p>
+        <img style="width: 10vw;position: absolute; left: 5vw; top: 3.5vw;" src="../images/convenient.png">
+        <img style="width: 10vw;position: absolute; left: 55vw; top: 3.5vw" src="../images/employees.png">
+        <p style="font-size:2.5vw;position: absolute; left: 20vw; top: 22vw; font-family: NanumSquarebold; color:">직원들의 편의를 위해 <br> 다양한 도움을 드립니다!</p>
+        <p style="font-size:2vw;position: absolute; left: 20vw; top: 29.5vw; color:">기숙사 운영<br> 야간교통비지급<br> 주차비지원</p>
+        <p style="font-size:2.5vw;position: absolute; left: 70vw; top: 22vw; font-family: NanumSquarebold;color:">최고의 복지는 <br> 휴가죠!</p>
+        <p style="font-size:2vw;position: absolute; left: 70vw; top: 29.5vw; color:">연차, 반차, 창립일휴무<br> 근로자의 날 휴무<br> 휴양시설 제공 등</p>
+        <img style="width: 10vw;position: absolute; left: 5vw; top: 22vw;" src="../images/bus.png">
+        <img style="width: 10vw;position: absolute; left: 55vw; top: 22vw" src="../images/sunbed.png">
+      </article>
+    </section>
+
+    <section style="height: 25vw; background-image: url(../images/background2.jpg);background-size: 100%;margin-top:-2vw; margin-bottom:-2vw">
+      <p style="color:white; text-align:center; font-size:2.3vw;"><br><br><br>​GLIM은 머신 비전 전문 업체로 산업용 카메라를 이용한 불량검출시스템에 대한 설계 및 개발 생산을<br> 
+       모두 자체기술로 승부하는 기술 전문 업체입니다.</p>
+    </section>
+    
+    <footer id="section4" style="background-color:#6E6E6E; height: 30vw">
+      <div style="text-align : center;"><img src="../images/logo.png" style="margin-top: 3.5vw; width:17vw;"></div>
+      <p style="color:white; text-align:center; font-size:1.7vw;"><br>본사 : 14353 경기도 광명시 일직동 43 GIDC C동 1306호<br>
+         충청지사 : 28121 충청북도 청주시 청원구 오창읍 구룡4길 6-7 보은빌딩 104호</p>
+      <p style="color:white; text-align:right; font-size:1.7vw; margin-right:2vw"><br> 대표번호 : 070-7862-3040 &nbsp;&nbsp; 이메일 : glim@iglim.net </p>
+    </footer>
+
+  </body>
+</html>

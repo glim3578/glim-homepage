@@ -9,7 +9,7 @@
  *widtgh
  * Released on: September 13, 2019
  */
-.swiper-container{top-2vw; margin-left:0;margin-right:0;position:relative;overflow:hidden;list-style:none;padding:0;z-index:1;width:99.5vw;height:60vw;}
+.swiper-container{top:-2vw; margin-left:0;margin-right:0;position:relative;overflow:hidden;list-style:none;padding:0;z-index:1;width:99.5vw;height:60vw;}
 .swiper-container-no-flexbox .swiper-slide{float:left;}
 .swiper-container-vertical>.swiper-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
 .swiper-wrapper{position:relative;width:100%;height:100%;z-index:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-transition-property:-webkit-transform;transition-property:-webkit-transform;-o-transition-property:transform;transition-property:transform;transition-property:transform,-webkit-transform;-webkit-box-sizing:content-box;box-sizing:content-box}

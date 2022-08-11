@@ -1,4 +1,4 @@
-var mySwiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper('.swiper_auto-container', {
 
 	slidesPerView : 1, // 동시에 보여줄 슬라이드 갯수
 	spaceBetween : 10, // 슬라이드간 간격

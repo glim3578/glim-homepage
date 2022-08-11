@@ -11,6 +11,6 @@ var mySwiper = new Swiper('.swiper_auto-container', {
 	loop : true, // 무한 반복
 
             autoplay: {
-    	delay: 3000,
+    	delay: 5000,
  	 },
 });

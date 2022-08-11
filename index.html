@@ -10,10 +10,11 @@
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css" rel="stylesheet">
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/swiper_one_auto.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/jquery.modal.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
-    <title></title>
+    <title>GLIM</title>
     <style>
       * {  font-family: 'NanumGothic';}
       * {  font-family: 'NanumSquare';}
@@ -45,20 +46,13 @@
         <img style="width:49.75vw;float:right;margin-top:3vw" src="images/main_img.png">
       </section>
       <section style="height:27.98vw; background-color:#F2F2F2">
-        <div class="slider" style="float:left">
-          <input type="radio" name="slide1" id="slide1" checked>
-          <input type="radio" name="slide1" id="slide2">
-          <input type="radio" name="slide1" id="slide3">
-          <ul id="imgholder" class="imgs">
-            <li><img src="images/전극 슬라이딩 검사.jpg" style="width:49.75vw"></li>
-            <li><img src="images/절연 Align Vision, Bar Type Vision.jpg" style="width:49.75vw"></li>
-            <li><img src="images/절연overlay vision.jpg" style="width:49.75vw"></li>
-          </ul>
-          <div class="bullets">
-            <label for="slide1">&nbsp;</label>
-            <label for="slide2">&nbsp;</label>
-            <label for="slide3">&nbsp;</label>
+        <div class="swiper_auto-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/전극 슬라이딩 검사.jpg" style="max-width:100%"></div>
+            <div class="swiper-slide"><img src="images/절연 Align Vision, Bar Type Vision.jpg" style="max-width:100%"></div>
+            <div class="swiper-slide"><img src="images/절연overlay vision.jpg" style="max-width:100%"></div>
           </div>
+        <script src="js/swiper_oneitem_auto.js"></script>
         </div>
         <article style="float: right; width: 49.75vw;position:relative;">
           <p style="font-size:1.6vw; position: absolute; left:2vw; top:2vw;font-family: NanumSquarebold; color:">이차전지 생산공정은 크게 전극, 조립, 활성화 공정이 있는데, 공정마다 여러 검사 기술이 필요합니다.</p>
@@ -83,7 +77,7 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
-        <script src="js/swiper01.js"></script>
+        <script src="js/swiper_threeitem_nonauto.js"></script>
     
       <div id="ex1" class="modal">
         <video preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" controlslist="modownload" controls style="width: 100%;"> <source src="videos/Belt Width Inspect.mp4" type="video/mp4">
@@ -129,6 +123,14 @@
     <section style="height:35.8vw; background-color:#FFFEE4; width: 99.5vw;">
       <div style="height:2vw;"></div>
       <div style="font-size:3vw; text-align:center; font-family:NanumSquarebold;">기업문화</div>
+       <div class="swiper_auto-container" style="float:right;top:2vw;">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/image01.jpg" style="max-width:100%"></div>
+            <div class="swiper-slide"><img src="images/image02.jpg" style="max-width:100%"></div>
+            <div class="swiper-slide"><img src="images/image03.jpg" style="max-width:100%"></div>
+          </div>
+        </div>
+      <script src="js/swiper_oneitem_auto.js"></script>
       <article style="position:relative; width: 49.75vw;height:27.98vw;">
         <p style="font-size:1.5vw; position: absolute; left: 8vw; top: 2.5vw; font-family: NanumSquarebold; color:">안정된 생활을 <br> 지원합니다. </p>
         <p style="font-size:1.39vw; position: absolute; left: 8vw; top: 7vw; color:">건강검진, 통신비 지원 <br> 각종 경조사 지원<br> 결혼준비 지원, 선택적복리후생</p>
@@ -143,21 +145,6 @@
         <img style="width: 5vw; position: absolute; left: 2vw; top: 17vw;" src="images/giftbox.png">
         <img style="width: 5vw; position: absolute; left: 26vw; top: 17vw" src="images/notebook.png">
       </article>
-      <div class="slider" style="float:right;top:-25.98vw;">
-        <input type="radio" name="slide2" id="slide4" checked>
-        <input type="radio" name="slide2" id="slide5">
-        <input type="radio" name="slide2" id="slide6">
-        <ul id="imgholder" class="imgs">
-          <li><img src="images/image01.jpg" style="width:49.75vw"></li>
-          <li><img src="images/image02.jpg" style="width:49.75vw"></li>
-          <li><img src="images/image03.jpg" style="width:49.75vw"></li>
-        </ul>
-        <div class="bullets">
-          <label for="slide4">&nbsp;</label>
-          <label for="slide5">&nbsp;</label>
-          <label for="slide6">&nbsp;</label>
-        </div>
-      </div>
     </section>
 
     <section style="height:27.98vw; background-color:#FFFEE4;">

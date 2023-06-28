@@ -1,195 +1,643 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
     <script src="js/swiper.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.modal.min.js"></script>
     <script src="js/mobileconnect.js"></script>
-    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css" rel="stylesheet">
-    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/swiper.css">
-    <link rel="stylesheet" href="css/swiper_one_auto.css">
-    <link rel="stylesheet" href="css/slider.css">
-    <link rel="stylesheet" href="css/jquery.modal.min.css">
-    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/swiper_one_auto.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" href="css/jquery.modal.min.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
     <title>GLIM</title>
     <style>
-      * {  font-family: 'NanumGothic';}
-      * {  font-family: 'NanumSquare';}
-      * {  line-height: 130%;}
-      * {word-break: keep-all;}
-      header {background-color:#FFFFFF; opacity:0.8; width:99.5vw; height:2.5vw; position:fixed; justify-content: space-between;z-index:2;margin-top: -2vw}
-      body {margin: 0 auto; width:99.5vw;-ms-overflow-style: none;}
-      html {scroll-behavior: smooth}
-      ::-webkit-scrollbar { display: none;}
-      @media screen and (orientation: portrait){#main1080p {display:none;}}
-      @media screen and (orientation: landscape){#main720p {display:none;}}
+      * {
+        font-family: "NanumGothic";
+      }
+      * {
+        font-family: "NanumSquare";
+      }
+      * {
+        line-height: 130%;
+      }
+      * {
+        word-break: keep-all;
+      }
+      header {
+        background-color: #ffffff;
+        opacity: 0.8;
+        width: 99.5vw;
+        height: 2.5vw;
+        position: fixed;
+        justify-content: space-between;
+        z-index: 2;
+        margin-top: -2vw;
+      }
+      body {
+        margin: 0 auto;
+        width: 99.5vw;
+        -ms-overflow-style: none;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+      @media screen and (orientation: portrait) {
+        #main1080p {
+          display: none;
+        }
+      }
+      @media screen and (orientation: landscape) {
+        #main720p {
+          display: none;
+        }
+      }
     </style>
   </head>
-  <body style="font-size: 1vw;font-family: NanumSquare;">
-    <section style="height:40.3vw; background-color:#F2F2F2;">
-        <div style="height:2vw;"></div>
-        <div style="text-align:right;margin-right:1vw">
-        <a href='./gVSAR.zip' style="display:inline-block;text-decoration:none;color:black;" download>gVSAR 다운로드</a>
-        <a href='./주식회사_GLIM 회사_소개서.pdf' style="display:inline-block;margin-left:3vw;text-decoration:none;color:black;" download>회사소개서 다운로드</a>
-        </div>
-        <div style="font-size:3vw; text-align:center; font-family:NanumSquarebold;height:6vw">그림은..</div>
-        <article style="float: left; width: 49.75vw; position:relative;">
-          <p style="font-size:1.6vw; position: absolute; left:2vw; top:3vw;font-family: NanumSquarebold;color:">'그림'은 머신비전 전문업체로서 FA(공장자동화) 산업에서 사람의 눈을 대신하는 영상 처리 전문 업체입니다.
-          </p>
-          <p style="font-size:1.39vw; position: absolute; left: 2vw; top:8vw; color:">FA 산업에서 머신비전 시스템의 용도는 생산되는 제품을 
-            <br>카메라를 이용해 실시간으로 감시하여 
-            <br>불량 검출 및 위치 보정을 자동으로 해 주는 기능을 하고 있습니다.
-          </p>
-          <p style="font-size:1.39vw; position: absolute; left: 2vw; top:15vw; color:">반도체와 평판 디스플레이 공정에서 많이 사용되며, 
-            <br>현재는 2차 전지 분야에도 적극적으로 활용되고 있습니다.
-            <br>근래에는 전기자동차에 필수로 사용되는 2차 전지 핵심 제조사 중 하나인 엘지에너지솔루션에서 중요한 파트너사로 사업 중에 있습니다.
-          </p>
-          </article>
-        <img style="width:49.75vw;float:right;margin-top:3vw" src="images/main_img.png">
-      </section>
-      <section style="height:27.98vw; background-color:#F2F2F2">
-        <div class="swiper_auto-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="images/전극 슬라이딩 검사.jpg" style="max-width:100%"></div>
-            <div class="swiper-slide"><img src="images/절연 Align Vision, Bar Type Vision.jpg" style="max-width:100%"></div>
-            <div class="swiper-slide"><img src="images/절연overlay vision.jpg" style="max-width:100%"></div>
+  <body style="font-size: 1vw; font-family: NanumSquare">
+    <section style="height: 40.3vw; background-color: #f2f2f2">
+      <div style="height: 2vw"></div>
+      <div style="text-align: right; margin-right: 1vw">
+        <a
+          href="./gVSAR.zip"
+          style="display: inline-block; text-decoration: none; color: black"
+          download
+          >gVSAR 다운로드</a
+        >
+        <a
+          href="./logo.zip"
+          style="display: inline-block; text-decoration: none; color: black"
+          download
+          >로고 다운로드</a
+        >
+        <a
+          href="./주식회사_GLIM 회사_소개서.pdf"
+          style="
+            display: inline-block;
+            margin-left: 3vw;
+            text-decoration: none;
+            color: black;
+          "
+          download
+          >회사소개서 다운로드</a
+        >
+      </div>
+      <div
+        style="
+          font-size: 3vw;
+          text-align: center;
+          font-family: NanumSquarebold;
+          height: 6vw;
+        "
+      >
+        그림은..
+      </div>
+      <article style="float: left; width: 49.75vw; position: relative">
+        <p
+          style="
+            font-size: 1.6vw;
+            position: absolute;
+            left: 2vw;
+            top: 3vw;
+            font-family: NanumSquarebold;
+          "
+        >
+          '그림'은 머신비전 전문업체로서 FA(공장자동화) 산업에서 사람의 눈을
+          대신하는 영상 처리 전문 업체입니다.
+        </p>
+        <p style="font-size: 1.39vw; position: absolute; left: 2vw; top: 8vw">
+          FA 산업에서 머신비전 시스템의 용도는 생산되는 제품을 <br />카메라를
+          이용해 실시간으로 감시하여 <br />불량 검출 및 위치 보정을 자동으로 해
+          주는 기능을 하고 있습니다.
+        </p>
+        <p style="font-size: 1.39vw; position: absolute; left: 2vw; top: 15vw">
+          반도체와 평판 디스플레이 공정에서 많이 사용되며, <br />현재는 2차 전지
+          분야에도 적극적으로 활용되고 있습니다. <br />근래에는 전기자동차에
+          필수로 사용되는 2차 전지 핵심 제조사 중 하나인 엘지에너지솔루션에서
+          중요한 파트너사로 사업 중에 있습니다.
+        </p>
+      </article>
+      <img
+        style="width: 49.75vw; float: right; margin-top: 3vw"
+        src="images/main_img.png"
+      />
+    </section>
+    <section style="height: 27.98vw; background-color: #f2f2f2">
+      <div class="swiper_auto-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/전극 슬라이딩 검사.jpg" style="max-width: 100%" />
           </div>
+          <div class="swiper-slide">
+            <img
+              src="images/절연 Align Vision, Bar Type Vision.jpg"
+              style="max-width: 100%"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/절연overlay vision.jpg" style="max-width: 100%" />
+          </div>
+        </div>
         <script src="js/swiper_oneitem_auto.js"></script>
-        </div>
-        <article style="float: right; width: 49.75vw;position:relative;">
-          <p style="font-size:1.6vw; position: absolute; left:2vw; top:2vw;font-family: NanumSquarebold; color:">이차전지 생산공정은 크게 전극, 조립, 활성화 공정이 있는데, 공정마다 여러 검사 기술이 필요합니다.</p>
-          <p style="font-size:1.39vw; position: absolute; left:2vw; top:8vw;; color:">"그림"은 전극 공정에서 표면 외관 검사, 상하부 불일치 검사, 1㎛ 이하의 정도가 필요한 두께 측정 시스템 등을 개발 및 공급하고 있습니다. 
-            <br>또한 파우치 조립 초기 공정인 노칭 후 외관 및 전수 사이즈 검사 솔루션, 와인더 공정의 모든 외관 및 치수 검사 솔루션 역시 보유하고 있습니다. </p> 
-          <p style="font-size:1.39vw; position: absolute; left:2vw; top:17vw;; color:">테슬라에서 제안한 4680 Battery의 전극 공정, 와인더 공정 검사 역시 엘지에너지솔루션과 함께 개발하고 있습니다.</p>
-        </article>
-      </section>
-      <section style="height: 35vw;position:relative;">
-        <div style="height:3vw;"></div>
-        <div style="font-size:3vw; text-align:center; font-family:NanumSquarebold;">제품소개</div>
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><a href="#ex1" rel="modal:open"><img src="images/Belt Width Inspect.jpg"></a></div>
-            <div class="swiper-slide"><a href="#ex2" rel="modal:open"><img src="images/Coating Rod Inspect.jpg"></a></div>
-            <div class="swiper-slide"><a href="#ex3" rel="modal:open"><img src="images/Lens Aligner.jpg"></a></div>
-            <div class="swiper-slide"><a href="#ex4" rel="modal:open"><img src="images/Micro Pin Counter.jpg"></a></div>
-            <div class="swiper-slide"><a href="#ex5" rel="modal:open"><img src="images/Mobile LCD Discriminant Inspect.jpg"></a></div>
-            <div class="swiper-slide"><a href="#ex6" rel="modal:open"><img src="images/Portable Film Width Sensing Machine.jpg"></a></div>
-            <div class="swiper-slide"><a href="#ex7" rel="modal:open"><img src="images/Sanitary Napkin Inspect.jpg"></a></div>
-            <div class="swiper-slide"><a href="#ex8" rel="modal:open"><img src="images/Web Inspection System.jpg"></a></div>
+      </div>
+      <article style="float: right; width: 49.75vw; position: relative">
+        <p
+          style="
+            font-size: 1.6vw;
+            position: absolute;
+            left: 2vw;
+            top: 2vw;
+            font-family: NanumSquarebold;
+          "
+        >
+          이차전지 생산공정은 크게 전극, 조립, 활성화 공정이 있는데, 공정마다
+          여러 검사 기술이 필요합니다.
+        </p>
+        <p style="font-size: 1.39vw; position: absolute; left: 2vw; top: 8vw">
+          "그림"은 전극 공정에서 표면 외관 검사, 상하부 불일치 검사, 1㎛ 이하의
+          정도가 필요한 두께 측정 시스템 등을 개발 및 공급하고 있습니다.
+          <br />또한 파우치 조립 초기 공정인 노칭 후 외관 및 전수 사이즈 검사
+          솔루션, 와인더 공정의 모든 외관 및 치수 검사 솔루션 역시 보유하고
+          있습니다.
+        </p>
+        <p style="font-size: 1.39vw; position: absolute; left: 2vw; top: 17vw">
+          테슬라에서 제안한 4680 Battery의 전극 공정, 와인더 공정 검사 역시
+          엘지에너지솔루션과 함께 개발하고 있습니다.
+        </p>
+      </article>
+    </section>
+    <section style="height: 35vw; position: relative">
+      <div style="height: 3vw"></div>
+      <div
+        style="font-size: 3vw; text-align: center; font-family: NanumSquarebold"
+      >
+        제품소개
+      </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#ex1" rel="modal:open"
+              ><img src="images/Belt Width Inspect.jpg"
+            /></a>
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-slide">
+            <a href="#ex2" rel="modal:open"
+              ><img src="images/Coating Rod Inspect.jpg"
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#ex3" rel="modal:open"
+              ><img src="images/Lens Aligner.jpg"
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#ex4" rel="modal:open"
+              ><img src="images/Micro Pin Counter.jpg"
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#ex5" rel="modal:open"
+              ><img src="images/Mobile LCD Discriminant Inspect.jpg"
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#ex6" rel="modal:open"
+              ><img src="images/Portable Film Width Sensing Machine.jpg"
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#ex7" rel="modal:open"
+              ><img src="images/Sanitary Napkin Inspect.jpg"
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#ex8" rel="modal:open"
+              ><img src="images/Web Inspection System.jpg"
+            /></a>
+          </div>
         </div>
-        <script src="js/swiper_threeitem_nonauto.js"></script>
-    
+        <div class="swiper-pagination"></div>
+      </div>
+      <script src="js/swiper_threeitem_nonauto.js"></script>
+
       <div id="ex1" class="modal">
-        <video preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" controlslist="modownload" controls style="width: 100%;"> <source src="videos/Belt Width Inspect.mp4" type="video/mp4">
-        </video> 
+        <video
+          preload="auto"
+          autoplay="true"
+          loop="loop"
+          muted="muted"
+          volume="0"
+          controlslist="modownload"
+          controls
+          style="width: 100%"
+        >
+          <source src="videos/Belt Width Inspect.mp4" type="video/mp4" />
+        </video>
       </div>
 
       <div id="ex2" class="modal">
-        <video preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" controlslist="modownload" controls style="width: 100%;"> <source src="videos/Coating Rod Inspect.mp4" type="video/mp4">
-        </video> 
+        <video
+          preload="auto"
+          autoplay="true"
+          loop="loop"
+          muted="muted"
+          volume="0"
+          controlslist="modownload"
+          controls
+          style="width: 100%"
+        >
+          <source src="videos/Coating Rod Inspect.mp4" type="video/mp4" />
+        </video>
       </div>
 
       <div id="ex3" class="modal">
-        <video preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" controlslist="modownload" controls style="width: 100%;"> <source src="videos/Lens Aligner.mp4" type="video/mp4">
-        </video> 
+        <video
+          preload="auto"
+          autoplay="true"
+          loop="loop"
+          muted="muted"
+          volume="0"
+          controlslist="modownload"
+          controls
+          style="width: 100%"
+        >
+          <source src="videos/Lens Aligner.mp4" type="video/mp4" />
+        </video>
       </div>
 
       <div id="ex4" class="modal">
-        <video preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" controlslist="modownload" controls style="width: 100%;"> <source src="videos/Micro Pin Counter.mp4" type="video/mp4">
-        </video> 
+        <video
+          preload="auto"
+          autoplay="true"
+          loop="loop"
+          muted="muted"
+          volume="0"
+          controlslist="modownload"
+          controls
+          style="width: 100%"
+        >
+          <source src="videos/Micro Pin Counter.mp4" type="video/mp4" />
+        </video>
       </div>
 
       <div id="ex5" class="modal">
-        <video preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" controlslist="modownload" controls style="width: 100%;"> <source src="videos/Mobile LCD Discriminant Inspect.mp4" type="video/mp4">
-        </video> 
+        <video
+          preload="auto"
+          autoplay="true"
+          loop="loop"
+          muted="muted"
+          volume="0"
+          controlslist="modownload"
+          controls
+          style="width: 100%"
+        >
+          <source
+            src="videos/Mobile LCD Discriminant Inspect.mp4"
+            type="video/mp4"
+          />
+        </video>
       </div>
 
       <div id="ex6" class="modal">
-        <video preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" controlslist="modownload" controls style="width: 100%;"> <source src="videos/Portable Film Width Sensing Machine.mp4" type="video/mp4">
-        </video> 
+        <video
+          preload="auto"
+          autoplay="true"
+          loop="loop"
+          muted="muted"
+          volume="0"
+          controlslist="modownload"
+          controls
+          style="width: 100%"
+        >
+          <source
+            src="videos/Portable Film Width Sensing Machine.mp4"
+            type="video/mp4"
+          />
+        </video>
       </div>
 
       <div id="ex7" class="modal">
-        <video preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" controlslist="modownload" controls style="width: 100%;"> <source src="videos/Sanitary Napkin Inspect.mp4" type="video/mp4">
-        </video> 
+        <video
+          preload="auto"
+          autoplay="true"
+          loop="loop"
+          muted="muted"
+          volume="0"
+          controlslist="modownload"
+          controls
+          style="width: 100%"
+        >
+          <source src="videos/Sanitary Napkin Inspect.mp4" type="video/mp4" />
+        </video>
       </div>
 
       <div id="ex8" class="modal">
-        <video preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" controlslist="modownload" controls style="width: 100%;"> <source src="videos/Web Inspection System.mp4" type="video/mp4">
-        </video> 
+        <video
+          preload="auto"
+          autoplay="true"
+          loop="loop"
+          muted="muted"
+          volume="0"
+          controlslist="modownload"
+          controls
+          style="width: 100%"
+        >
+          <source src="videos/Web Inspection System.mp4" type="video/mp4" />
+        </video>
       </div>
     </section>
-    <div style="height:0vw;"></div>
-    <section style="height:35.8vw; background-color:#FFFEE4; width: 99.5vw;">
-      <div style="height:2vw;"></div>
-      <div style="font-size:3vw; text-align:center; font-family:NanumSquarebold;">기업문화</div>
-       <div class="swiper_auto-container" style="float:right;top:2vw;">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="images/image01.jpg" style="max-width:100%"></div>
-            <div class="swiper-slide"><img src="images/image02.jpg" style="max-width:100%"></div>
-            <div class="swiper-slide"><img src="images/image03.jpg" style="max-width:100%"></div>
-            <div class="swiper-slide"><img src="images/image04.jpg" style="max-width:100%"></div>
-            <div class="swiper-slide"><img src="images/image05.jpg" style="max-width:100%"></div>
+    <div style="height: 0vw"></div>
+    <section style="height: 35.8vw; background-color: #fffee4; width: 99.5vw">
+      <div style="height: 2vw"></div>
+      <div
+        style="font-size: 3vw; text-align: center; font-family: NanumSquarebold"
+      >
+        기업문화
+      </div>
+      <div class="swiper_auto-container" style="float: right; top: 2vw">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/image01.jpg" style="max-width: 100%" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/image02.jpg" style="max-width: 100%" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/image03.jpg" style="max-width: 100%" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/image04.jpg" style="max-width: 100%" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/image05.jpg" style="max-width: 100%" />
           </div>
         </div>
+      </div>
       <script src="js/swiper_oneitem_auto.js"></script>
-      <article style="position:relative; width: 49.75vw;height:27.98vw;">
-        <p style="font-size:1.5vw; position: absolute; left: 8vw; top: 2.5vw; font-family: NanumSquarebold; color:">안정된 생활을 <br> 지원합니다. </p>
-        <p style="font-size:1.39vw; position: absolute; left: 8vw; top: 7vw; color:">건강검진, 통신비 지원 <br> 각종 경조사 지원<br> 결혼준비 지원, 선택적복리후생</p>
-        <p style="font-size:1.5vw; position: absolute; left: 32vw; top: 2.5vw; font-family: NanumSquarebold;color:">직원들의 열정에 <br> 보답하고 싶습니다. </p>
-        <p style="font-size:1.39vw; position: absolute; left: 32vw; top: 7vw; color:">퇴직연금 인센티브제 <br> 퇴직금 <br> 4대 보험</p><br><br>
-        <img style="width: 5vw; position: absolute; left: 2vw; top: 4vw;" src="images/bankbook.png">
-        <img style="width: 5vw; position: absolute; left: 26vw; top: 4vw" src="images/money.png">
-        <p style="font-size:1.5vw; position: absolute; left: 8vw; top: 15vw; font-family: NanumSquarebold; color:">우리회사만의 <br> 특별한 복지</p>
-        <p style="font-size:1.39vw; position: absolute; left: 8vw; top: 20vw; color:">명절 선물<br> 귀향비</p><br><br>
-        <p style="font-size:1.5vw; position: absolute; left: 32vw; top: 15vw; font-family: NanumSquarebold;color:">직원들의 자기계발을 존중합니다. </p>
-        <p style="font-size:1.39vw; position: absolute; left: 32vw; top: 20vw; color:">워크샵, 플레이샵<br> 자격증취득지원<br> 교육비 지원<br> 점심식사 및 저녁식사 제공</p>
-        <img style="width: 5vw; position: absolute; left: 2vw; top: 17vw;" src="images/giftbox.png">
-        <img style="width: 5vw; position: absolute; left: 26vw; top: 17vw" src="images/notebook.png">
+      <article style="position: relative; width: 49.75vw; height: 27.98vw">
+        <p
+          style="
+            font-size: 1.5vw;
+            position: absolute;
+            left: 8vw;
+            top: 2.5vw;
+            font-family: NanumSquarebold;
+          "
+        >
+          안정된 생활을 <br />
+          지원합니다.
+        </p>
+        <p style="font-size: 1.39vw; position: absolute; left: 8vw; top: 7vw">
+          건강검진, 통신비 지원 <br />
+          각종 경조사 지원<br />
+          결혼준비 지원, 선택적복리후생
+        </p>
+        <p
+          style="
+            font-size: 1.5vw;
+            position: absolute;
+            left: 32vw;
+            top: 2.5vw;
+            font-family: NanumSquarebold;
+          "
+        >
+          직원들의 열정에 <br />
+          보답하고 싶습니다.
+        </p>
+        <p style="font-size: 1.39vw; position: absolute; left: 32vw; top: 7vw">
+          퇴직연금 인센티브제 <br />
+          퇴직금 <br />
+          4대 보험
+        </p>
+        <br /><br />
+        <img
+          style="width: 5vw; position: absolute; left: 2vw; top: 4vw"
+          src="images/bankbook.png"
+        />
+        <img
+          style="width: 5vw; position: absolute; left: 26vw; top: 4vw"
+          src="images/money.png"
+        />
+        <p
+          style="
+            font-size: 1.5vw;
+            position: absolute;
+            left: 8vw;
+            top: 15vw;
+            font-family: NanumSquarebold;
+          "
+        >
+          우리회사만의 <br />
+          특별한 복지
+        </p>
+        <p style="font-size: 1.39vw; position: absolute; left: 8vw; top: 20vw">
+          명절 선물<br />
+          귀향비
+        </p>
+        <br /><br />
+        <p
+          style="
+            font-size: 1.5vw;
+            position: absolute;
+            left: 32vw;
+            top: 15vw;
+            font-family: NanumSquarebold;
+          "
+        >
+          직원들의 자기계발을 존중합니다.
+        </p>
+        <p style="font-size: 1.39vw; position: absolute; left: 32vw; top: 20vw">
+          워크샵, 플레이샵<br />
+          자격증취득지원<br />
+          교육비 지원<br />
+          점심식사 및 저녁식사 제공
+        </p>
+        <img
+          style="width: 5vw; position: absolute; left: 2vw; top: 17vw"
+          src="images/giftbox.png"
+        />
+        <img
+          style="width: 5vw; position: absolute; left: 26vw; top: 17vw"
+          src="images/notebook.png"
+        />
       </article>
     </section>
 
-    <section style="height:27.98vw; background-color:#FFFEE4;">
-      <div style="width:49.75vw; height:27.98vw; float:left">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?list=PLlIX4lkC1JdMscCMaO_HLrauqg8OSbGcm" title="(주)그림배 족구대회" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <section style="height: 27.98vw; background-color: #fffee4">
+      <div style="width: 49.75vw; height: 27.98vw; float: left">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/videoseries?list=PLlIX4lkC1JdMscCMaO_HLrauqg8OSbGcm"
+          title="(주)그림배 족구대회"
+          frameborder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
-      <article style="position: relative; left:49.75vw; width: 49.75vw;">
-        <p style="font-size:1.5vw; position: absolute; left: 8vw; top: 0.5vw; font-family: NanumSquarebold; color:">편안하게 일할 수 있는 <br> 최선의 환경을 제공합니다.</p>
-        <p style="font-size:1.39vw; position: absolute; left: 8vw; top: 5.5vw; color:">공기청정기<br> 카페테리아 <br> 사무용품 지급</p><br><br>
-        <p style="font-size:1.5vw; position: absolute; left: 32vw; top: 0.5vw; font-family: NanumSquarebold;color:">직원 중심의 조직문화를 <br> 만들어갑니다.</p>
-        <p style="font-size:1.39vw; position: absolute; left: 32vw; top: 5.5vw; color:">회식강요 안함<br> 야근강요 안함 <br> 자유복장</p>
-        <img style="width: 5vw; position: absolute; left: 2vw; top: 1.5vw;" src="images/convenient.png">
-        <img style="width: 5vw; position: absolute; left: 26vw; top: 1.5vw" src="images/employees.png">
-        <p style="font-size:1.5vw; position: absolute; left: 8vw; top: 14vw; font-family: NanumSquarebold; color:">직원들의 편의를 위해 <br> 다양한 도움을 드립니다!</p>
-        <p style="font-size:1.39vw; position: absolute; left: 8vw; top: 19vw; color:">기숙사 운영<br> 야간교통비지급<br> 주차비지원</p>
-        <p style="font-size:1.5vw; position: absolute; left: 32vw; top: 14vw; font-family: NanumSquarebold;color:">최고의 복지는 <br> 휴가죠!</p>
-        <p style="font-size:1.39vw; position: absolute; left: 32vw; top: 19vw; color:">연차, 반차, 창립일휴무<br> 근로자의 날 휴무<br> 휴양시설 제공 등</p>
-        <img style="width: 5vw; position: absolute; left: 2vw; top: 16vw;" src="images/bus.png">
-        <img style="width: 5vw; position: absolute; left: 26vw; top: 16vw" src="images/sunbed.png">
+      <article style="position: relative; left: 49.75vw; width: 49.75vw">
+        <p
+          style="
+            font-size: 1.5vw;
+            position: absolute;
+            left: 8vw;
+            top: 0.5vw;
+            font-family: NanumSquarebold;
+          "
+        >
+          편안하게 일할 수 있는 <br />
+          최선의 환경을 제공합니다.
+        </p>
+        <p style="font-size: 1.39vw; position: absolute; left: 8vw; top: 5.5vw">
+          공기청정기<br />
+          카페테리아 <br />
+          사무용품 지급
+        </p>
+        <br /><br />
+        <p
+          style="
+            font-size: 1.5vw;
+            position: absolute;
+            left: 32vw;
+            top: 0.5vw;
+            font-family: NanumSquarebold;
+          "
+        >
+          직원 중심의 조직문화를 <br />
+          만들어갑니다.
+        </p>
+        <p
+          style="font-size: 1.39vw; position: absolute; left: 32vw; top: 5.5vw"
+        >
+          회식강요 안함<br />
+          야근강요 안함 <br />
+          자유복장
+        </p>
+        <img
+          style="width: 5vw; position: absolute; left: 2vw; top: 1.5vw"
+          src="images/convenient.png"
+        />
+        <img
+          style="width: 5vw; position: absolute; left: 26vw; top: 1.5vw"
+          src="images/employees.png"
+        />
+        <p
+          style="
+            font-size: 1.5vw;
+            position: absolute;
+            left: 8vw;
+            top: 14vw;
+            font-family: NanumSquarebold;
+          "
+        >
+          직원들의 편의를 위해 <br />
+          다양한 도움을 드립니다!
+        </p>
+        <p style="font-size: 1.39vw; position: absolute; left: 8vw; top: 19vw">
+          기숙사 운영<br />
+          야간교통비지급<br />
+          주차비지원
+        </p>
+        <p
+          style="
+            font-size: 1.5vw;
+            position: absolute;
+            left: 32vw;
+            top: 14vw;
+            font-family: NanumSquarebold;
+          "
+        >
+          최고의 복지는 <br />
+          휴가죠!
+        </p>
+        <p style="font-size: 1.39vw; position: absolute; left: 32vw; top: 19vw">
+          연차, 반차, 창립일휴무<br />
+          근로자의 날 휴무<br />
+          휴양시설 제공 등
+        </p>
+        <img
+          style="width: 5vw; position: absolute; left: 2vw; top: 16vw"
+          src="images/bus.png"
+        />
+        <img
+          style="width: 5vw; position: absolute; left: 26vw; top: 16vw"
+          src="images/sunbed.png"
+        />
       </article>
     </section>
     <section>
-        <video id="main1080p" poster="images/loading.gif" autoplay="true" loop="loop" muted="muted" volume="0" style="width: 100%;"><source src="videos/main1080p.mp4" type="video/mp4">
-        </video>  
-       <video id="main720p" poster="images/loading.gif" autoplay="true" loop="loop" muted="muted" volume="0" style="width: 100%;"> <source src="videos/main720p.mp4" type="video/mp4">
-        </video>  
-      </section>
-    <section style="height: 25vw; background-image: url(images/background2.jpg);background-size: 100%;margin-top:-3vw">
-      <p style="color:white; text-align:center; font-size:2vw;"><br><br><br>​GLIM은 머신 비전 전문 업체로 산업용 카메라를 이용한 불량검출시스템에 대한 설계 및 개발 생산을<br> 
-       모두 자체기술로 승부하는 기술 전문 업체입니다.</p>
+      <video
+        id="main1080p"
+        poster="images/loading.gif"
+        autoplay="true"
+        loop="loop"
+        muted="muted"
+        volume="0"
+        style="width: 100%"
+      >
+        <source src="videos/main1080p.mp4" type="video/mp4" />
+      </video>
+      <video
+        id="main720p"
+        poster="images/loading.gif"
+        autoplay="true"
+        loop="loop"
+        muted="muted"
+        volume="0"
+        style="width: 100%"
+      >
+        <source src="videos/main720p.mp4" type="video/mp4" />
+      </video>
     </section>
-    
-    <footer style="background-color:#6E6E6E; height: 30vw">
-      <div style="text-align : center;"><img src="images/logo.png" style="margin-top: 3.5vw; width:17vw;"></div>
-      <p style="color:white; text-align:center; font-size:1.2vw;"><br><br><br>본사 : 14353 경기도 광명시 일직동 43 GIDC C동 1306호<br>
-         충청지사 : 28121 충청북도 청주시 청원구 오창읍 구룡4길 6-7 보은빌딩 104호</p>
-      <p style="color:white; text-align:right; font-size:1.2vw; margin-right:2vw"><br><br><br> 대표번호 : 070-7862-3040 &nbsp;&nbsp; 이메일 : glim@iglim.net </p>
-    </footer>
+    <section
+      style="
+        height: 25vw;
+        background-image: url(images/background2.jpg);
+        background-size: 100%;
+        margin-top: -3vw;
+      "
+    >
+      <p style="color: white; text-align: center; font-size: 2vw">
+        <br /><br /><br />​GLIM은 머신 비전 전문 업체로 산업용 카메라를 이용한
+        불량검출시스템에 대한 설계 및 개발 생산을<br />
+        모두 자체기술로 승부하는 기술 전문 업체입니다.
+      </p>
+    </section>
 
+    <footer style="background-color: #6e6e6e; height: 30vw">
+      <div style="text-align: center">
+        <img src="images/logo.png" style="margin-top: 3.5vw; width: 17vw" />
+      </div>
+      <p style="color: white; text-align: center; font-size: 1.2vw">
+        <br /><br /><br />본사 : 14353 경기도 광명시 일직동 43 GIDC C동
+        1306호<br />
+        충청지사 : 28121 충청북도 청주시 청원구 오창읍 구룡4길 6-7 보은빌딩
+        104호
+      </p>
+      <p
+        style="
+          color: white;
+          text-align: right;
+          font-size: 1.2vw;
+          margin-right: 2vw;
+        "
+      >
+        <br /><br /><br />
+        대표번호 : 070-7862-3040 &nbsp;&nbsp; 이메일 : glim@iglim.net
+      </p>
+    </footer>
   </body>
 </html>
